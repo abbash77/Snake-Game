@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url('../img/bg.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(153, 175, 153),rgb(209, 209, 156));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(rgb(196, 155, 155),rgb(172, 172, 127));
+    border:  2px solid purple;
+    /* transform:scale(1.02); */
+    border-radius: 9px;
+}
+.food{
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+#scoreBox{
+    position: absolute;
+    top:9px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
+#hiscoreBox{
+    position: absolute;
+    top:59px;
+    right:200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Source Code Pro', monospace;
+}
